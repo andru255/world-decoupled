@@ -1,11 +1,11 @@
-// need diferent atoms and molecules
-include ../../atoms/links/breadcrumb.jade
-include ../../atoms/molecules/default.jade
+//- need diferent atoms and molecules
+include ../../../atoms/links/views/breadcrumb.jade
+include ../../../molecules/finder/views/default.jade
 
-//render only
+//- render only
 mixin organism-finder
   .organism-finder&attributes(attributes)
     +molecule-finder
-    +atom-breadcrumb
+    +atom-breadcrumb#lnkTrending Trending
     if block
       block

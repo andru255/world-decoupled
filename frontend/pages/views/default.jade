@@ -2,7 +2,14 @@
 extends ../../templates/views/default
 
 //needs a organisms
-extends ../../organisms/finder/views/default
+include ../../organisms/finder/views/default
+
+block head
+  link(rel="stylesheet", href="../styles/default.css", media="all")
+
 block content
   p Welcome to my first page
   +organism-finder
+
+block footer
+  script(type="text/javascript", src="../scripts/default.js")

@@ -1,0 +1,19 @@
+.atom-link {
+  color: #000;
+}
+.atom-link-breadcrumb {
+  text-decoration: underline;
+}
+.atom-txt {
+  border: 1px dotted #808080;
+}
+.atom-btn {
+  background-color: #008000;
+  color: #ffa500;
+  border: none;
+  font-size: 15px;
+}
+.organism-finder {
+  background-color: #808080;
+  border: 1px solid #ddd;
+}

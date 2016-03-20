@@ -1,11 +1,11 @@
 // need atoms
-include ../../atoms/fields/txt.jade
-include ../../atoms/fields/btn.jade
+include ../../../atoms/fields/views/txt
+include ../../../atoms/fields/views/btn
 
 //render only
 mixin molecule-finder
   .molecule-finder&attributes(attributes)
     +atom-txt(name="txtKeyword")
-    +atom-btn(name="btnFinder")
+    +atom-btn(name="btnFinder") Search now!
     if block
       block

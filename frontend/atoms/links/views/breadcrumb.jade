@@ -1,0 +1,10 @@
+include default
+
+mixin atom-breadcrumb
+  if attributes.class
+    - attributes.class="atom-link-breadcrumb " + attributes.class
+  else
+    - attributes.class="atom-link-breadcrumb"
+  +lnk(attributes)
+    if block
+      block

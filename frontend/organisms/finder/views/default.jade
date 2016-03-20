@@ -1,0 +1,11 @@
+// need diferent atoms and molecules
+include ../../atoms/links/breadcrumb.jade
+include ../../atoms/molecules/default.jade
+
+//render only
+mixin organism-finder
+  .organism-finder&attributes(attributes)
+    +molecule-finder
+    +atom-breadcrumb
+    if block
+      block

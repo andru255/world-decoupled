@@ -1,0 +1,6 @@
+mixin atom-lnk(overrideAttr)
+  if overrideAttr
+    - attributes = overrideAttr
+  a(href="#", class="atom-link")&attributes(attributes)
+    if block
+      block
